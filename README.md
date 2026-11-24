@@ -155,20 +155,21 @@ cd /root
 ```
 
 > [!NOTE]
-> **Credenciais padrão de acesso:** `usuario: user, senha: user`
-`usuario: root, senha: tvbox`.
+> **Credenciais padrão de acesso:**
+> - `usuario: user` | `senha: user`
+> - `usuario: root` | `senha: tvbox`
 
 3. Execute os dois scripts de instalação na memória interna, **nesta ordem**:
 
 ```bash
 ./aml-multiboot-setup.sh
 ```
-˜
+
 ```bash
 ./aml-install-to-emmc.sh
 ```
 
-3. Aguarde o término completo da cópia para a memória flash interna (eMMC). **Não desligue o aparelho durante o processo.**
+4. Aguarde o término completo da cópia para a memória flash interna (eMMC). **Não desligue o aparelho durante o processo.**
 
 > [!WARNING]
 > Este passo apaga permanentemente o sistema Android original da memória interna da TV Box e instala o Debian configurado no lugar.
@@ -177,7 +178,7 @@ cd /root
 
 ### Passo 5 — Finalização
 
-1. Ao concluir o segundo comando, desligue a TV Box pelo menu do sistema (ou com `˜p``oweroff`).
+1. Ao concluir o segundo comando, desligue a TV Box pelo menu do sistema (ou com `poweroff`).
 2. **Remova o cartão microSD** da TV Box.
 3. Ligue o aparelho normalmente na tomada — a partir de agora ele iniciará direto pela memória interna, pronto para uso!
 

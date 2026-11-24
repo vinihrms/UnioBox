@@ -53,10 +53,10 @@ sudo mv pishrink.sh /usr/local/bin/
 > Sem `-s`, o PiShrink tenta injetar scripts de auto-expansão específicos do Raspberry Pi OS (`/etc/rc.local`), que podem falhar ou não funcionar em imagens Debian ARM genéricas (Amlogic). Como o cartão microSD é usado apenas em modo Live para rodar `aml-install-to-emmc.sh` — que já particiona e ocupa toda a eMMC da TV Box —, não precisamos de auto-expansão no cartão SD.
 
 ```bash
-sudo pishrink.sh -s sistema_tvbox_b13.img tvbox-btv-b13-educacional.img
+sudo pishrink.sh -s sistema_tvbox_b13.img uniobox_b13.img
 ```
 
-Ao final, o arquivo `tvbox-btv-b13-educacional.img` terá apenas o tamanho real dos dados instalados + uma pequena margem de segurança (normalmente entre **4 GB e 6 GB**, cabendo facilmente em qualquer cartão microSD de 8 GB ou 16 GB).
+Ao final, o arquivo `uniobox_b13.img` terá apenas o tamanho real dos dados instalados + uma pequena margem de segurança (normalmente entre **4 GB e 6 GB**, cabendo facilmente em qualquer cartão microSD de 8 GB ou 16 GB).
 
 ---
 
@@ -65,8 +65,8 @@ Ao final, o arquivo `tvbox-btv-b13-educacional.img` terá apenas o tamanho real 
 Compacte a imagem reduzida com `gzip` (compatível nativamente com BalenaEtcher e Raspberry Pi Imager):
 
 ```bash
-gzip -9 -k tvbox-btv-b13-educacional.img
-ls -lh tvbox-btv-b13-educacional.img.gz
+gzip -9 -k uniobox_b13.img
+ls -lh uniobox_b13.img.gz
 ```
 
 Verifique o tamanho do arquivo `.img.gz` gerado:
@@ -76,7 +76,7 @@ Verifique o tamanho do arquivo `.img.gz` gerado:
 O GitHub Releases aceita anexos de até **2 GB por arquivo**. Basta gerar o checksum e publicar o `.img.gz` diretamente como **arquivo único**:
 
 ```bash
-sha256sum tvbox-btv-b13-educacional.img.gz > SHA256SUMS.txt
+sha256sum uniobox_b13.img.gz > SHA256SUMS.txt
 ```
 
 ### Caso B — Arquivo maior que 2 GB
@@ -84,8 +84,8 @@ sha256sum tvbox-btv-b13-educacional.img.gz > SHA256SUMS.txt
 Divida o `.img.gz` em partes de **1,5 GB** (`1500M`) e gere o checksum de tudo:
 
 ```bash
-split -b 1500M -d tvbox-btv-b13-educacional.img.gz tvbox-btv-b13-educacional.img.gz.part
-sha256sum tvbox-btv-b13-educacional.img.gz.part* tvbox-btv-b13-educacional.img.gz > SHA256SUMS.txt
+split -b 1500M -d uniobox_b13.img.gz uniobox_b13.img.gz.part
+sha256sum uniobox_b13.img.gz.part* uniobox_b13.img.gz > SHA256SUMS.txt
 ```
 
 ---
@@ -95,7 +95,7 @@ sha256sum tvbox-btv-b13-educacional.img.gz.part* tvbox-btv-b13-educacional.img.g
 Antes de tornar a versão pública no GitHub, valide em uma TV Box **BTV B13** real:
 
 - [ ] Se houver partes, testar a reconstrução com `scripts/juntar-imagem.sh` / `.bat` e conferir `sha256sum -c SHA256SUMS.txt`.
-- [ ] Gravar `tvbox-btv-b13-educacional.img.gz` em um cartão microSD usando BalenaEtcher ou Raspberry Pi Imager.
+- [ ] Gravar `uniobox_b13.img.gz` em um cartão microSD usando BalenaEtcher ou Raspberry Pi Imager.
 - [ ] Dar boot na BTV B13 segurando o botão `update` com um clipe.
 - [ ] Verificar idioma `pt-BR`, teclado `ABNT2` e montagem automática ao plugar um pendrive.
 - [ ] Abrir o terminal e executar `./aml-multiboot-setup.sh` e `./aml-install-to-emmc.sh`.
