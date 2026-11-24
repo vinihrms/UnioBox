@@ -15,7 +15,7 @@
 [Sobre](#-sobre-e-objetivo-do-projeto) •
 [O que vem pronto](#-o-que-já-vem-pronto) •
 [Tutorial de Instalação](#-tutorial-de-instalação) •
-[Aplicativos](#-matriz-de-aplicativos-instalados) •
+[Aplicativos](#aplicativos-instalados) •
 [Solução de Problemas](docs/TROUBLESHOOTING.md) •
 [Autores](#-autores-instituição-e-créditos)
 
@@ -72,7 +72,7 @@ flowchart LR
 | Item | Observação |
 | :--- | :--- |
 | **TV Box BTV B13** | Modelo com processador Amlogic S905X4 |
-| **Cartão microSD** | Mínimo de *8GB* |
+| **Cartão microSD** | Mínimo de **8GB** |
 | **Leitor de cartão SD** | Para gravar a imagem pelo computador |
 | **Clipe de papel** | Para pressionar o botão `update` da TV Box|
 | **Monitor/TV HDMI + Teclado e Mouse USB** | Para acompanhar o boot e digitar os comandos no terminal |
@@ -82,7 +82,7 @@ flowchart LR
 
 ### Passo 1 — Baixar a imagem do sistema
 
-1. Acesse a aba **[Releases]()** deste repositório e baixe a versão mais recente da imagem (`.img.gz`).
+1. Acesse a aba **[Releases](https://github.com/vinihrms/UnioBox/releases)** deste repositório e baixe a versão mais recente da imagem (`.img.gz`).
 2. *(Opcional, recomendado)* Confira o código de integridade (`SHA256SUMS.txt`) para garantir que o download não corrompeu.
 
 <details>
