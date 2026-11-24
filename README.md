@@ -185,29 +185,29 @@ cd /root
 
 A seleção abaixo foi avaliada diretamente na **BTV B13 (Amlogic S905X4 / arm64)** a partir de um levantamento comparativo de distribuições educacionais (*Linux Educacional*, *Edubuntu*, *Educabox*). Estão listados os principais aplicativos validados como funcionais e incluídos no sistema:
 
-| Categoria | Aplicativo | Finalidade | Status na BTV B13 | Observação |
-| :--- | :--- | :--- | :---: | :--- |
-| **Escritório** | **LibreOffice** | Suíte completa (texto, planilha e apresentação) | ✅ Funciona | `libreoffice` |
-| **Escritório** | **Gnumeric** | Planilha eletrônica leve | ✅ Funciona | `gnumeric` |
-| **Internet** | **Firefox ESR** | Navegador web | ✅ Funciona | `firefox-esr` |
-| **Arte e Design** | **Drawing** | Desenho simples (estilo Paint) | ✅ Funciona | Excelente desempenho |
-| **Arte e Design** | **Tux Paint** | Desenho infantil educativo | ✅ Funciona | `tuxpaint` |
-| **Matemática** | **Tux Math** | Jogo educativo de aritmética | ✅ Funciona | Destaque nos testes |
-| **Matemática** | **KAlgebra** | Calculadora gráfica e álgebra | ✅ Funciona | `kalgebra` |
-| **Matemática** | **KBruch** | Exercícios de frações | ✅ Funciona | `kbruch` |
-| **Matemática** | **KmPlot** | Gráficos de funções matemáticas | ✅ Funciona | `kmplot` |
-| **Matemática** | **Kig** | Geometria interativa | ⚙️ Funciona c/ ajuste | Requer `qtwayland5` (já incluso) |
-| **Ciências** | **Kalzium** | Tabela periódica interativa | ✅ Funciona | `kalzium` |
-| **Ciências** | **Atomix** | Quebra-cabeça de moléculas | ✅ Funciona | Destaque nos testes |
-| **Ciências** | **Step** | Simulador interativo de física | ✅ Funciona | `step` |
-| **Ciências** | **Rocs** | Teoria dos grafos | ✅ Funciona | `rocs` |
-| **Ciências** | **KStars** | Planetário e astronomia | ✅ Funciona | Leve gargalo, utilizável |
-| **Geografia** | **KGeography** | Mapas, capitais e bandeiras | ✅ Funciona | Destaque nos testes |
-| **Idiomas e Leitura** | **KHangMan** | Jogo da forca educativo | ✅ Funciona | `khangman` |
-| **Idiomas e Leitura** | **Kanagram** | Jogo de anagramas | ✅ Funciona | Interface/palavras em inglês |
-| **Programação** | **Klavaro** | Treinador de digitação | ✅ Funciona | `klavaro` |
-| **Programação** | **KTurtle** | Lógica de programação (LOGO) | ⚙️ Funciona c/ ajuste | Requer `qt6-wayland` (já incluso) |
-| **Jogos de Lógica** | **Kapman, Killbots, Kolf, KPatience** | Jogos leves de raciocínio e coordenação | ✅ Funciona | Coleção leve KDE Games |
+| Categoria | Aplicativo | Finalidade | Status na BTV B13 |
+| :--- | :--- | :--- | :---: |
+| **Escritório** | **LibreOffice** | Suíte completa (texto, planilha e apresentação) | ✅ Funciona |
+| **Escritório** | **Gnumeric** | Planilha eletrônica leve | ✅ Funciona |
+| **Internet** | **Firefox ESR** | Navegador web | ✅ Funciona |
+| **Arte e Design** | **Drawing** | Desenho simples (estilo Paint) | ✅ Funciona |
+| **Arte e Design** | **Tux Paint** | Desenho infantil educativo | ✅ Funciona |
+| **Matemática** | **Tux Math** | Jogo educativo de aritmética | ✅ Funciona |
+| **Matemática** | **KAlgebra** | Calculadora gráfica e álgebra | ✅ Funciona |
+| **Matemática** | **KBruch** | Exercícios de frações | ✅ Funciona |
+| **Matemática** | **KmPlot** | Gráficos de funções matemáticas | ✅ Funciona |
+| **Matemática** | **Kig** | Geometria interativa | ⚙️ Funciona c/ ajuste |
+| **Ciências** | **Kalzium** | Tabela periódica interativa | ✅ Funciona |
+| **Ciências** | **Atomix** | Quebra-cabeça de moléculas | ✅ Funciona |
+| **Ciências** | **Step** | Simulador interativo de física | ✅ Funciona |
+| **Ciências** | **Rocs** | Teoria dos grafos | ✅ Funciona |
+| **Ciências** | **KStars** | Planetário e astronomia | ✅ Funciona |
+| **Geografia** | **KGeography** | Mapas, capitais e bandeiras | ✅ Funciona |
+| **Idiomas e Leitura** | **KHangMan** | Jogo da forca educativo | ✅ Funciona |
+| **Idiomas e Leitura** | **Kanagram** | Jogo de anagramas | ✅ Funciona |
+| **Programação** | **Klavaro** | Treinador de digitação | ✅ Funciona |
+| **Programação** | **KTurtle** | Lógica de programação (LOGO) | ⚙️ Funciona c/ ajuste |
+| **Jogos de Lógica** | **Kapman, Killbots, Kolf, KPatience** | Jogos leves de raciocínio e coordenação | ✅ Funciona |
 
 ---
 
