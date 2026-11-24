@@ -23,10 +23,7 @@
 
 ---
 
-<!--
-Descomente após adicionar uma captura de tela do sistema em docs/img/desktop.png:
 ![Área de trabalho do sistema na BTV B13](docs/img/desktop.png)
--->
 
 ## 🎯 Sobre e Objetivo do Projeto
 
