@@ -1,0 +1,26 @@
+# Imagens de disco e arquivos compactados (publicar apenas em GitHub Releases!)
+*.img
+*.img.gz
+*.img.xz
+*.img.zst
+*.img.bz2
+*.part*
+*.iso
+*.raw
+*.dd
+*.bin
+
+# Arquivos temporários e de sistema operacional
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Logs temporários
+*.log
+
+AGENTS.md
+*.numbers
