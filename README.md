@@ -209,6 +209,24 @@ A seleção abaixo foi avaliada diretamente na **BTV B13 (Amlogic S905X4 / arm64
 | **Programação** | **KTurtle** | Lógica de programação (LOGO) | ⚙️ Funciona c/ ajuste |
 | **Jogos de Lógica** | **Kapman, Killbots, Kolf, KPatience** | Jogos leves de raciocínio e coordenação | ✅ Funciona |
 
+### ⚠️ Outros Softwares Testados (Não Incluídos na Imagem)
+
+A tabela abaixo reúne outros softwares voltados ao ensino de programação e eletrônica que também foram testados na BTV B13, mas não foram incluídos na imagem padrão:
+
+| Software | Formato / Instalação | Desempenho na BTV B13 | Observações |
+| :--- | :--- | :---: | :--- |
+| **Scratch** | Versão Web (navegador — sem versão nativa `arm64`) | ⚠️ Baixo desempenho | Apresentou lentidão acentuada e engasgos na execução pelo navegador, prejudicando a experiência de uso. |
+| **Tinkercad** | Versão Web (navegador) | ❌ Lento / Instável | Executou com lentidão mesmo em projetos pequenos e sofreu fechamento inesperado (*crash*) ao abrir projetos maiores. |
+| **Arduino IDE** | Nativo (`sudo apt install arduino`) | ✅ Funcional | Não vem pré-instalado na imagem, mas apresenta desempenho considerável e permite escrever, compilar e enviar códigos normalmente para placas Arduino. |
+
+Para utilizar o **Arduino IDE**, basta instalá-lo pelo terminal:
+
+```bash
+sudo apt update && sudo apt install arduino
+```
+
+![Arduino conectado à TV Box BTV B13](docs/img/arduino.jpeg)
+
 ---
 
 ## 📚 Documentação Complementar
@@ -222,7 +240,7 @@ A seleção abaixo foi avaliada diretamente na **BTV B13 (Amlogic S905X4 / arm64
 
 ### Autores
 - **Vinícius Almeida Hermes** — Graduando em Ciência da Computação (UNIOESTE — Campus de Cascavel)
-- **Prof. Dr. Marcio Seyji Oyamada** — Professor Orientador (UNIOESTE — Campus de Cascavel)
+- **Prof. Dr. Marcio Seiji Oyamada** — Professor Orientador (UNIOESTE — Campus de Cascavel)
 
 ### Realização e Parceria
 - **UNIOESTE** — Universidade Estadual do Oeste do Paraná (*Campus de Cascavel — Curso de Ciência da Computação*)

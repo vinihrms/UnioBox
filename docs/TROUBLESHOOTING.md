@@ -87,3 +87,12 @@ O **áudio nativo da BTV B13 não funciona** nesta versão da descaracterizaçã
 Se a imagem foi reduzida com `PiShrink -s`, a partição do cartão microSD fica compacta por padrão (já que o objetivo principal é instalar na eMMC).
 
 Caso deseje usar o sistema permanentemente a partir do próprio cartão microSD, você pode expandir a partição `ext4` manualmente usando o **GParted** em outro computador Linux ou via `parted` + `resize2fs` na partição raiz do cartão.
+
+---
+
+## 9. Tela de boas-vindas do Armbian piscando várias vezes antes de iniciar a interface
+
+Quando a TV Box é desligada incorretamente (por exemplo, retirando o cabo de energia diretamente da tomada sem encerrar o sistema pelo menu ou com `poweroff`), o sistema pode apresentar várias piscadas na tela de boas-vindas do **Armbian** durante a inicialização seguinte antes de carregar a área de trabalho.
+
+- **Solução:** desligue a TV Box e ligue-a novamente para normalizar a inicialização.
+- **Prevenção:** sempre encerre o aparelho pelo menu do sistema ou executando `poweroff` no terminal antes de desconectar a alimentação.
